@@ -1,0 +1,49 @@
+{
+    "name": "starter-gulp-html",
+    "version": "1.0.0",
+    "description": "Toolchain for rapid HTML/CSS development",
+    "main": "gulpfile.js",
+    "repository": "git@github.com:ducrot/starter-gulp-html.git",
+    "author": "Christian Ducrot",
+    "license": "MIT",
+    "browserslist": [
+        ">1%"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.0.0",
+        "@babel/preset-env": "^7.0.0",
+        "@fortawesome/fontawesome": "^1.1.8",
+        "@fortawesome/fontawesome-free-brands": "^5.0.13",
+        "@fortawesome/fontawesome-free-regular": "^5.0.13",
+        "@fortawesome/fontawesome-free-solid": "^5.0.13",
+        "autoprefixer": "^9.1.5",
+        "babelify": "^10.0.0",
+        "browser-sync": "^2.24.7",
+        "browserify": "^16.2.2",
+        "cssnano": "^4.1.0",
+        "del": "^3.0.0",
+        "gulp": "^4.0.0",
+        "gulp-babel": "^8.0.0",
+        "gulp-clean-css": "^3.10.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-google-webfonts": "^2.0.0",
+        "gulp-imagemin": "^4.1.0",
+        "gulp-notify": "^3.2.0",
+        "gulp-plumber": "^1.2.0",
+        "gulp-postcss": "^8.0.0",
+        "gulp-sass": "^4.0.1",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-svg-sprite": "^1.4.0",
+        "gulp-uglify": "^3.0.1",
+        "svg4everybody": "^2.1.9",
+        "vinyl-buffer": "^1.0.1",
+        "vinyl-source-stream": "^2.0.0"
+    },
+    "dependencies": {
+        "bootstrap": "^4.1.3",
+        "jquery": "^3.3.1",
+        "jquery.mmenu": "^7.0.6",
+        "magnific-popup": "^1.1.0",
+        "popper.js": "^1.14.4"
+    }
+}

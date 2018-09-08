@@ -1,0 +1,10 @@
+/********************************************************************
+ * __layout.scss
+ * The layout folder holds all macro layout files. Styles for
+ * major sections of the layout like header or footer and styles
+ * for a grid system would belong here.
+ */
+
+@import "header";
+@import "main";
+@import "footer";

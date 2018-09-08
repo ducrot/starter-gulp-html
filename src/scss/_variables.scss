@@ -1,0 +1,21 @@
+// Color system
+$primary: #E8640C;
+$secondary: #313048;
+
+//$white: #fff;
+//$dark: #313048;
+//$light: #e3E2E2;
+
+
+// Spacing
+$spacer: 2rem;
+
+
+// Font
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$line-height-base: 1.5;
+
+$h1-font-size: $font-size-base * 3.0;
+$h2-font-size: $font-size-base * 2.0;
+$h3-font-size: $font-size-base * 1;

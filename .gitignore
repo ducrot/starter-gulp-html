@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+.settings
+.svn
+.vagrant
+
+dist
+node_modules
+yarn-error.log
