@@ -41,7 +41,7 @@ Doc: [gulp-google-webfonts](https://www.npmjs.com/package/gulp-google-webfonts)
 ## Font Awesome
 
 Font Awesome 5 is used. Define icons in `src/js/fontawesome.js` and see:
-[How To Use Svg With Js](https://fontawesome.com/how-to-use/svg-with-js) .
+[SVG JavaScript Core](https://fontawesome.com/how-to-use/on-the-web/advanced/svg-javascript-core) .
 
 
 ## Custom icons
@@ -55,3 +55,13 @@ Use in HTML:
 ```
 
 [SVG for Everybody](https://jonathantneal.github.io/svg4everybody/) is used as Polyfill for old browser support.
+
+
+## Credits
+
+- The ACME logo was created by [Acme Logos - Professional Placeholder Logos](http://acmelogos.com/).
+
+
+## License
+
+[MIT License](LICENSE)
