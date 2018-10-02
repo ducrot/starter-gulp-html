@@ -18,7 +18,7 @@ This toolchain will do:
 
 ```bash
 # clone the repo
-git clone https://git.ducrot.de/websolutions/starter-gulp-html.git my-project
+git clone git@github.com:ducrot/starter-gulp-html.git my-project
 
 # change directory
 cd !$
