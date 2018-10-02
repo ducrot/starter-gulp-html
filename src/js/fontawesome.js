@@ -1,16 +1,38 @@
-import fontawesome from '../../node_modules/@fortawesome/fontawesome'
+/********************************************************************
+ * Font Awesome
+ * SVG JavaScript Core
+ * https://fontawesome.com/how-to-use/on-the-web/advanced/svg-javascript-core
+ * https://fontawesome.com/icons?d=gallery
+ */
 
-import faHome from '../../node_modules/@fortawesome/fontawesome-free-solid/faHome'
-import faBars from '../../node_modules/@fortawesome/fontawesome-free-solid/faBars'
-import faCheck from '../../node_modules/@fortawesome/fontawesome-free-solid/faCheck'
-import faSmile from '../../node_modules/@fortawesome/fontawesome-free-regular/faSmile'
-import faApple from '../../node_modules/@fortawesome/fontawesome-free-brands/faApple'
+import { library, dom } from '@fortawesome/fontawesome-svg-core'
+
 
 // fas
-fontawesome.library.add(faHome, faBars, faCheck);
+import {
+    faHome, faBars, faCheck
+} from '@fortawesome/free-solid-svg-icons'
+
+library.add(
+    faHome, faBars, faCheck
+)
+
 
 // far
-fontawesome.library.add(faSmile);
+import {
+    faSmile
+} from '@fortawesome/free-regular-svg-icons'
+
+library.add(faSmile)
+
 
 // fab
-fontawesome.library.add(faApple);
+import {
+    faApple
+} from '@fortawesome/free-brands-svg-icons'
+
+library.add(faApple)
+
+
+// Kicks off the process of finding <i> tags and replacing with <svg>
+dom.watch()
