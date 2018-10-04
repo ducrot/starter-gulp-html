@@ -1,11 +1,15 @@
+import 'jquery.mmenu/dist/jquery.mmenu'
+
 $(document).ready(function() {
-    $("#navbarSupportedContent").mmenu({
-        wrappers: ["bootstrap4"],
+    $("#mobileMenu").mmenu({
         extensions: ["position-right"]
     }, {
         // configuration
         offCanvas: {
             pageSelector: "#page"
+        },
+        classNames: {
+            selected: "active"
         }
     });
 });

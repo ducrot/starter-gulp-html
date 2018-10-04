@@ -14,10 +14,10 @@
         <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="ACME co">
             <img class="d-block" height="40" src="./assets/logo-negative.svg" alt="ACME co"/>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a href="#mobileMenu" class="navbar-toggler" aria-controls="mobileMenu" aria-expanded="false" aria-label="Umschalten der Navigation">
             <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </a>
+        <div class="collapse navbar-collapse">
             <div class="navbar-nav ml-auto">
                 <a href="#" class="nav-item nav-link active"><i class="fas fa-home"></i></a>
                 <a href="#" class="nav-item nav-link">Blog</a>
@@ -126,6 +126,27 @@
             </p>
         </div>
     </footer>
+
+    <nav id="mobileMenu">
+        <div>
+            <div class="mm-logo">
+                <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="ACME co">
+                    <img src="./assets/logo.svg" height="40" alt="ACME co"/>
+                </a>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About us</a>
+                    <ul>
+                        <li><a href="/about/history/">History</a></li>
+                        <li><a href="/about/team/">The team</a></li>
+                        <li><a href="/about/address/">Our address</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
 </div>
 <script src="js/vendor.js"></script>
