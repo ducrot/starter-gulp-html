@@ -7,8 +7,8 @@ This toolchain will do:
 
 - Compile SCSS to CSS with Autoprefixer, Minify with nanocss and Sourcemap.
 - Considers browserslist in package.json.
-- JavaScript compiler with babel, Minify UglifyJS2 and Sourcemap.
-- Module loader with Browserify.
+- JavaScript transpiler with Babel.
+- Webpack module bundler for JavaScript.
 - Create SVG sprites from SVG icons.
 - Self-Hosted Google fonts.
 - Powered by Gulp and Browsersync.
@@ -17,17 +17,20 @@ This toolchain will do:
 ## Quick start
 
 ```bash
-# clone the repo
+# Clone the repo
 git clone git@github.com:ducrot/starter-gulp-html.git my-project
 
-# change directory
+# Change directory
 cd !$
 
-# install the dependencies with yarn
+# Install the dependencies with yarn
 yarn install
 
-# start with Browsersync
-gulp
+# Start with Browsersync
+yarn run dev
+
+# Production build
+yarn run build
 ```
 
 

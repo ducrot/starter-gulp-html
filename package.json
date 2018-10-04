@@ -2,7 +2,7 @@
     "name": "starter-gulp-html",
     "version": "1.0.0",
     "description": "Toolchain for rapid HTML/CSS development",
-    "main": "gulpfile.js",
+    "main": "tasks/index.js",
     "repository": "git@github.com:ducrot/starter-gulp-html.git",
     "author": "Christian Ducrot",
     "license": "MIT",
@@ -12,16 +12,13 @@
     "devDependencies": {
         "@babel/core": "^7.1.2",
         "@babel/preset-env": "^7.1.0",
+        "@babel/register": "^7.0.0",
         "autoprefixer": "^9.1.5",
-        "babelify": "^10.0.0",
         "browser-sync": "^2.24.7",
-        "browserify": "^16.2.3",
         "cssnano": "^4.1.4",
         "del": "^3.0.0",
         "gulp": "^4.0.0",
-        "gulp-babel": "^8.0.0",
         "gulp-clean-css": "^3.10.0",
-        "gulp-concat": "^2.6.1",
         "gulp-google-webfonts": "^2.0.0",
         "gulp-imagemin": "^4.1.0",
         "gulp-notify": "^3.2.0",
@@ -30,10 +27,9 @@
         "gulp-sass": "^4.0.1",
         "gulp-sourcemaps": "^2.6.4",
         "gulp-svg-sprite": "^1.5.0",
-        "gulp-uglify": "^3.0.1",
         "svg4everybody": "^2.1.9",
-        "vinyl-buffer": "^1.0.1",
-        "vinyl-source-stream": "^2.0.0"
+        "webpack": "^4.20.2",
+        "webpack-dev-middleware": "^3.4.0"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.4",
@@ -45,5 +41,9 @@
         "jquery.mmenu": "^7.2.0",
         "magnific-popup": "^1.1.0",
         "popper.js": "^1.14.4"
+    },
+    "scripts": {
+        "dev": "NODE_ENV=dev gulp --require @babel/register --gulpfile tasks",
+        "build": "gulp build --require @babel/register --gulpfile tasks"
     }
 }
