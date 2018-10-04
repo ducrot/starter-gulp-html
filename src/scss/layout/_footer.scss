@@ -1,18 +1,16 @@
-/* Sticky footer styles
--------------------------------------------------- */
+// Sticky footer
 #page {
     display: flex;
     height: 100vh;
     flex-direction: column;
 }
 
-header, footer {
+#page > * {
     flex: none;
 }
 
 main {
-    flex: 1 0 auto; /* 2 */
-    margin-bottom: 50px; /* Margin bottom by footer height */
+    flex: 1 0 auto;
 
     &:after {
         content: '\00a0'; /* &nbsp; */
@@ -23,9 +21,10 @@ main {
     }
 }
 
+// Footer styles
 footer {
-    min-height: 60px; /* Set the fixed height of the footer here */
-    line-height: 60px; /* Vertically center the text there */
+    min-height: 60px;
+    line-height: 60px;
     background: #5B5B5B;
     color: $white;
 
