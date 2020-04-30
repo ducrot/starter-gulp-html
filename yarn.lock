@@ -5020,10 +5020,10 @@ jquery.mmenu@^7.3.3:
   resolved "https://registry.yarnpkg.com/jquery.mmenu/-/jquery.mmenu-7.3.3.tgz#e870af2c650b00792359361165cc66b2943d6f60"
   integrity sha512-TzTd+Ru9ipFeWsbwGdDGKWapTEYRX4ZWILR0QA7hZ4dCL/JeSIDGMcqdpKRCR3CCl0pKwpgJf7NJ+n9JnMDc/A==
 
-jquery@^3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
-  integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
+jquery@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.0.tgz#9980b97d9e4194611c36530e7dc46a58d7340fc9"
+  integrity sha512-Xb7SVYMvygPxbFMpTFQiHh1J7HClEaThguL15N/Gg37Lri/qKyhRGZYzHRyLH8Stq3Aow0LsHO2O2ci86fCrNQ==
 
 js-base64@^2.1.8:
   version "2.5.1"
