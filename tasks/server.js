@@ -14,6 +14,7 @@ import { styles } from './styles'
 import { html } from './html'
 import { fonts } from './fonts'
 import { assets } from './assets'
+import { favicons } from "./favicons";
 
 const browser = browserSync.create()
 const bundler = webpack(webpackConfig)
@@ -43,6 +44,7 @@ function server() {
     gulp.watch(appConfig.svgicons.src, gulp.series(svgicons, reload))
     gulp.watch(appConfig.fonts.src, gulp.series(fonts, reload))
     gulp.watch(appConfig.assets.src, gulp.series(assets, reload))
+    gulp.watch(appConfig.favicons.src, gulp.series(favicons, reload))
 }
 
 

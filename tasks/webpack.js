@@ -29,7 +29,7 @@ let config = {
         splitChunks: {
             cacheGroups: {
                 vendor: {
-                    test: /node_modules/,
+                    test: /[\\/]node_modules[\\/]/,
                     chunks: 'initial',
                     name: 'vendor',
                     priority: 10,

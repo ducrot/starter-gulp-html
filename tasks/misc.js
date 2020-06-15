@@ -20,7 +20,10 @@ function onError (err) {
 
 
 function clean() {
-    return del(config.build.dest);
+    return del(
+        config.build.dest,
+        { force: true }
+    );
 }
 
 export { clean, onError }
