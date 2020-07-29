@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>starter-gulp-html</title>
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicons/favicon-48x48.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="My App">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="favicons/apple-touch-icon-1024x1024.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="My App">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="page">
+
+    <header class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="ACME co">
+            <img class="d-block" height="40" src="./assets/logo-negative.svg" alt="ACME co"/>
+        </a>
+        <a href="#mobileMenu" class="navbar-toggler" aria-controls="mobileMenu" aria-expanded="false" aria-label="Umschalten der Navigation">
+            <i class="fas fa-bars"></i>
+        </a>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav ml-auto">
+                <a href="/" class="nav-item nav-link"><i class="fas fa-home"></i></a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <a href="grids.html" class="nav-item nav-link active">Grids</a>
+                <a href="album.html" class="nav-item nav-link">Album</a>
+                <a href="#" class="nav-item nav-link disabled">Disabled</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="grids">
+
+        <section class="jumbotron p-3 text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Bootstrap grid examples</h1>
+                <p class="lead text-muted">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+            </div>
+        </section>
+
+        <main class="container" role="main">
+
+            <h3>Five grid tiers</h3>
+            <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>
+
+            <div class="row">
+                <div class="col-4">.col-4</div>
+                <div class="col-4">.col-4</div>
+                <div class="col-4">.col-4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">.col-sm-4</div>
+                <div class="col-sm-4">.col-sm-4</div>
+                <div class="col-sm-4">.col-sm-4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">.col-lg-4</div>
+                <div class="col-lg-4">.col-lg-4</div>
+                <div class="col-lg-4">.col-lg-4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-4">.col-xl-4</div>
+                <div class="col-xl-4">.col-xl-4</div>
+                <div class="col-xl-4">.col-xl-4</div>
+            </div>
+
+            <h3>Three equal columns</h3>
+            <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+
+            <h3>Three unequal columns</h3>
+            <p>Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
+            <div class="row">
+                <div class="col-md-3">.col-md-3</div>
+                <div class="col-md-6">.col-md-6</div>
+                <div class="col-md-3">.col-md-3</div>
+            </div>
+
+            <h3>Two columns</h3>
+            <p>Get two columns <strong>starting at desktops and scaling to large desktops</strong>.</p>
+            <div class="row">
+                <div class="col-md-8">.col-md-8</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+
+            <h3>Full width, single column</h3>
+            <p class="text-warning">No grid classes are necessary for full-width elements.</p>
+
+            <hr>
+
+            <h3>Two columns with two nested columns</h3>
+            <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns <strong>starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within the larger column.</p>
+            <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+            <div class="row">
+                <div class="col-md-8">
+                    .col-md-8
+                    <div class="row">
+                        <div class="col-md-6">.col-md-6</div>
+                        <div class="col-md-6">.col-md-6</div>
+                    </div>
+                </div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+
+            <hr>
+
+            <h3>Mixed: mobile and desktop</h3>
+            <p>The Bootstrap v4 grid system has five tiers of classes: xs (extra small), sm (small), md (medium), lg (large), and xl (extra large). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+            <p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
+            <div class="row">
+                <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-6">.col-6</div>
+                <div class="col-6">.col-6</div>
+            </div>
+
+            <hr>
+
+            <h3>Mixed: mobile, tablet, and desktop</h3>
+            <p></p>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-8">.col-12 .col-sm-6 .col-lg-8</div>
+                <div class="col-6 col-lg-4">.col-6 .col-lg-4</div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+                <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+                <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="float-right to-top">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="align-self-center">
+                <svg class="icon icon-acme-negative"><use xlink:href="icons.svg#acme-negative"></use></svg> | &copy; YYYY
+            </p>
+        </div>
+    </footer>
+
+    <nav id="mobileMenu">
+        <div>
+            <div class="mm-logo">
+                <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="ACME co">
+                    <img src="./assets/logo.svg" height="40" alt="ACME co"/>
+                </a>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="grids.html">Grids</a></li>
+                <li><a href="album.html">Album</a></li>
+                <li><a href="#">About us</a>
+                    <ul>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">The team</a></li>
+                        <li><a href="#">Our address</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+<link rel="stylesheet" href="fonts/fonts.css">
+</body>
+</html>
