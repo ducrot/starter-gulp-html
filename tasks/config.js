@@ -37,7 +37,7 @@ const config = {
         dest: 'dist/favicons/',
 
         config: {
-            path: "/favicons/",
+            path: "favicons/",
             appName: 'My App',                          // Your application's name. `string`
             appShortName: 'App',                        // Your application's short_name. `string`. Optional. If not set, appName will be used
             appDescription: 'This is my application',   // Your application's description. `string`
