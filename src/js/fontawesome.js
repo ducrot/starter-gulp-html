@@ -11,20 +11,22 @@ import { library, dom } from '@fortawesome/fontawesome-svg-core'
 
 // fas free-solid-svg-icons
 import {
-    faHome, faBars, faCheck, faCircle
+    faHome, faBars, faCheck, faCircle,
+    faParagraph, faImage, faTable, faListUl, faSquare, faBookmark, faPencilAlt, faTag, faExclamationTriangle, faInfoCircle, faSpinner, faWindowRestore, faBook, faChevronUp
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
-    faHome, faBars, faCheck, faCircle
+    faHome, faBars, faCheck, faCircle,
+    faParagraph, faImage, faTable, faListUl, faSquare, faBookmark, faPencilAlt, faTag, faExclamationTriangle, faInfoCircle, faSpinner, faWindowRestore, faBook, faChevronUp
 )
 
 
 // far free-regular-svg-icons
 import {
-    faSmile
+    faSmile, faSquare as farFaSquare
 } from '@fortawesome/free-regular-svg-icons'
 
-library.add(faSmile)
+library.add(faSmile, farFaSquare)
 
 
 // fab free-brands-svg-icons

@@ -63,6 +63,7 @@ Use in HTML:
 ## Credits
 
 - The ACME logo was created by [Acme Logos - Professional Placeholder Logos](http://acmelogos.com/).
+- Components page is based on [juzraai/bootstrap4-test-page](https://github.com/juzraai/bootstrap4-test-page)
 
 
 ## License
