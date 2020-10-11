@@ -60,6 +60,35 @@ Use in HTML:
 [SVG for Everybody](https://jonathantneal.github.io/svg4everybody/) is used as Polyfill for old browser support.
 
 
+## Deployment
+
+Deployment ist done via [Surf](https://github.com/TYPO3/Surf).
+
+### Install
+
+Edit paramaters in `.surf/live.php`.
+
+```bash
+composer install
+```
+
+### Usage
+
+```bash
+# Info
+./vendor/bin/surf describe live
+
+# Dry-run
+./vendor/bin/surf simulate live
+
+# Go!
+./vendor/bin/surf deploy  live
+
+# Rollback deployment
+./vendor/bin/surf rollback live
+```
+
+
 ## Credits
 
 - The ACME logo was created by [Acme Logos - Professional Placeholder Logos](http://acmelogos.com/).

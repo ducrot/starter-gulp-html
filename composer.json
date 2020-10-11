@@ -1,0 +1,12 @@
+{
+    "name": "kopfquartier/chiropraktik-bischoff",
+    "require": {
+        "typo3/surf": "^2.2"
+    },
+    "authors": [
+        {
+            "name": "Christian Ducrot",
+            "email": "christian@ducrot.de"
+        }
+    ]
+}
