@@ -1,5 +1,5 @@
 {
-    "name": "kopfquartier/chiropraktik-bischoff",
+    "name": "websolutions/starter-gulp-html",
     "require": {
         "typo3/surf": "^2.2"
     },
