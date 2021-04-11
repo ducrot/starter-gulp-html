@@ -42,7 +42,7 @@ const config = {
       appShortName: 'App',                        // Your application's short_name. `string`. Optional. If not set, appName will be used
       appDescription: 'This is my application',   // Your application's description. `string`
       developerName: 'Christian Ducrot',          // Your (or your developer's) name. `string`
-      developerURL: 'https://www.ducrot.de/',     // Your (or your developer's) URL. `string`
+      developerURL: 'https://ducrot.de/',     // Your (or your developer's) URL. `string`
       dir: "auto",                                // Primary text direction for name, short_name, and description
       lang: "de-DE",                              // Primary language for name and short_name
       background: "#fff",                         // Background colour for flattened icons. `string`
