@@ -12,17 +12,17 @@ import {onError} from './misc'
 
 
 function favicons() {
-    if (config.favicons.src) {
-        warmupSharp();
-        return gulp.src(config.favicons.src)
-            .pipe(plumber({errorHandler: onError}))
-            .pipe(faviconsGenerator(config.favicons.config))
-            .pipe(gulp.dest(config.favicons.dest));
-    } else {
-        return new Promise(function (resolve, reject) {
-            resolve();
-        });
-    }
+  if (config.favicons.src) {
+    warmupSharp();
+    return gulp.src(config.favicons.src)
+      .pipe(plumber({errorHandler: onError}))
+      .pipe(faviconsGenerator(config.favicons.config))
+      .pipe(gulp.dest(config.favicons.dest));
+  } else {
+    return new Promise(function (resolve, reject) {
+      resolve();
+    });
+  }
 }
 
 /**
@@ -35,14 +35,14 @@ function favicons() {
  * @returns {*}
  */
 function warmupSharp() {
-    return sharp(
-        Buffer.from(
-            `<svg xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" /></svg>`,
-            'utf-8'
-        )
+  return sharp(
+    Buffer.from(
+      `<svg xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" /></svg>`,
+      'utf-8'
     )
-        .metadata()
-        .then(() => sharp, () => sharp);
+  )
+    .metadata()
+    .then(() => sharp, () => sharp);
 }
 
-export { favicons }
+export {favicons}

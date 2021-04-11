@@ -9,33 +9,33 @@ import imageminMozjpeg from 'imagemin-mozjpeg'
 import imageminPngquant from 'imagemin-pngquant'
 
 import config from './config'
-import { onError } from './misc'
+import {onError} from './misc'
 
 
 function assets() {
-    return gulp.src(config.assets.src)
-        .pipe(plumber({errorHandler: onError}))
-        .pipe(imagemin([
-            // Lossless:
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: false},
-                    {removeDimensions: true}
-                ]
-            }),
-            // Lossy compression
-            imageminMozjpeg({
-                quality: 85,
-                progressive: true
-            }),
-            imageminPngquant({
-                quality: [0.8, 0.85]
-            })
-        ]))
-        .pipe(gulp.dest(config.assets.dest));
+  return gulp.src(config.assets.src)
+    .pipe(plumber({errorHandler: onError}))
+    .pipe(imagemin([
+      // Lossless:
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: false},
+          {removeDimensions: true}
+        ]
+      }),
+      // Lossy compression
+      imageminMozjpeg({
+        quality: 85,
+        progressive: true
+      }),
+      imageminPngquant({
+        quality: [0.8, 0.85]
+      })
+    ]))
+    .pipe(gulp.dest(config.assets.dest));
 }
 
-export { assets }
+export {assets}

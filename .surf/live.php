@@ -51,7 +51,7 @@ $rsyncExcludes = [
 //================================================================
 
 if (!isset($projectName, $deploymentPath, $deploymentHost)) {
-    echo '$projectName, $deploymentPath, $deploymentHost needs to be set in your deployment script!' . PHP_EOL;
+    echo '$projectName, $deploymentPath, $deploymentHost needs to be set in your deployment script!'.PHP_EOL;
     exit(1);
 }
 
@@ -60,7 +60,7 @@ $deployment->addApplication($application);
 
 // Set default config values
 if (!isset($repositoryUrl)) {
-    $repositoryUrl = 'file://' . dirname(__DIR__);
+    $repositoryUrl = 'file://'.dirname(__DIR__);
 }
 if (!isset($repositoryBranch)) {
     $repositoryBranch = getenv('DEPLOY_BRANCH') ?: 'master';

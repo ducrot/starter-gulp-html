@@ -11,16 +11,16 @@ import {onError} from './misc'
 
 
 function fonts() {
-    if (config.fonts.src) {
-        return gulp.src(config.fonts.src)
-            .pipe(plumber({errorHandler: onError}))
-            .pipe(googleWebFonts())
-            .pipe(gulp.dest(config.fonts.dest));
-    } else {
-        return new Promise(function (resolve, reject) {
-            resolve();
-        });
-    }
+  if (config.fonts.src) {
+    return gulp.src(config.fonts.src)
+      .pipe(plumber({errorHandler: onError}))
+      .pipe(googleWebFonts())
+      .pipe(gulp.dest(config.fonts.dest));
+  } else {
+    return new Promise(function (resolve, reject) {
+      resolve();
+    });
+  }
 }
 
-export { fonts }
+export {fonts}
