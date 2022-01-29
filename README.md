@@ -1,6 +1,8 @@
 README
 ------
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ducrot/starter-gulp-html)
+
 ## Toolchain for rapid HTML/CSS development
 
 This toolchain will do:
