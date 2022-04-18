@@ -15,7 +15,7 @@ import {favicons} from './favicons'
 import {server} from './server'
 
 
-export const dev = gulp.series(clean, svgicons, gulp.parallel(styles, html, fonts, assets, favicons), server)
-export const build = gulp.series(clean, svgicons, gulp.parallel(styles, scripts, html, fonts, assets, favicons))
+export const dev = gulp.series(clean, svgicons, fonts, gulp.parallel(styles, html, assets, favicons), server)
+export const build = gulp.series(clean, svgicons, fonts, gulp.parallel(styles, scripts, html, assets, favicons))
 
 export default dev

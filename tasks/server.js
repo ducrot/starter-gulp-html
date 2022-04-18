@@ -30,7 +30,6 @@ function server() {
         writeToDisk: true
       })
     ],
-    browser: "google chrome",
     // Workaround for: Failed to execute 'removeChild' on 'Node'
     // Exception browser-sync-client.js?v=2.24.7:9 in combination with mmenu
     notify: false,
