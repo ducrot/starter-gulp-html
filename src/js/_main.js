@@ -2,9 +2,9 @@
  * main.js
  */
 
-import './bootstrap'
-import './fontawesome'
-import './holderjs'
-import './magnific-popup'
-import './mmenu'
-import './svg4everybody'
+import './bootstrap.js'
+import './fontawesome.js'
+import './holderjs.js'
+import './magnific-popup.js'
+import './mmenu.js'
+import './svg4everybody.js'

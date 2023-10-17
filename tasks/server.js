@@ -7,14 +7,14 @@ import browserSync from 'browser-sync'
 import webpack from 'webpack'
 import webpackDevMiddleware from 'webpack-dev-middleware'
 
-import appConfig from './config'
-import {config as webpackConfig} from './webpack'
-import {svgicons} from './svgicons'
-import {styles} from './styles'
-import {html} from './html'
-import {fonts} from './fonts'
-import {assets} from './assets'
-import {favicons} from "./favicons";
+import appConfig from './config.js'
+import {config as webpackConfig} from './webpack.js'
+import {svgicons} from './svgicons.js'
+import {styles} from './styles.js'
+import {html} from './html.js'
+import {fonts} from './fonts.js'
+import {assets} from './assets.js'
+import {favicons} from "./favicons.js";
 
 const browser = browserSync.create()
 const bundler = webpack(webpackConfig)

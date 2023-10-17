@@ -1,4 +1,4 @@
-import 'jquery.mmenu/dist/jquery.mmenu'
+import 'jquery.mmenu/dist/jquery.mmenu.js'
 
 $(document).ready(function() {
     $("#mobileMenu").mmenu({

@@ -7,8 +7,8 @@ import plumber from 'gulp-plumber'
 import faviconsGenerator from 'gulp-favicons'
 import sharp from 'sharp'
 
-import config from './config'
-import {onError} from './misc'
+import config from './config.js'
+import {onError} from './misc.js'
 
 
 function favicons() {

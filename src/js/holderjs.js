@@ -1,1 +1,1 @@
-import 'holderjs/holder'
+import 'holderjs/holder.js'

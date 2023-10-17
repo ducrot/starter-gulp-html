@@ -3,12 +3,14 @@
  */
 
 import path from 'path'
+import { fileURLToPath } from 'url'
 import webpack from 'webpack'
 import process from 'process'
-import appConfig from './config'
+import appConfig from './config.js'
 
 const IS_DEV = (process.env.NODE_ENV === 'dev');
-
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 let config = {
 
@@ -20,9 +22,9 @@ let config = {
   },
   output: {
     filename: appConfig.scripts.dest + '[name].js',
-    path: path.resolve(__dirname, '../' + appConfig.build.dest)
+    path: path.resolve(__dirname, appConfig.build.dest)
   },
-  context: path.resolve(__dirname, '../' + appConfig.build.src),
+  context: path.resolve(__dirname, appConfig.build.src),
 
   optimization: {
     // Move node_modules imports to vendor.js
@@ -64,4 +66,4 @@ function scripts() {
   }))
 }
 
-module.exports = {config, scripts}
+export {config, scripts}

@@ -4,37 +4,37 @@
 
 const config = {
   build: {
-    src: 'src',
-    dest: 'dist/'
+    src: '../src',
+    dest: '../dist/'
   },
   styles: {
-    src: 'src/scss/**/*.scss',
-    dest: 'dist/css/'
+    src: '../src/scss/**/*.scss',
+    dest: '../dist/css/'
   },
   scripts: {
-    src: 'src/js/**/*.js',
+    src: '../src/js/**/*.js',
     entry: './js/_main.js',
     dest: 'js/'
   },
   html: {
-    src: ['src/**/*.html'],
-    dest: 'dist'
+    src: ['../src/**/*.html'],
+    dest: '../dist'
   },
   svgicons: {
-    src: ['src/icons/*.svg'],
-    dest: 'dist/'
+    src: ['../src/icons/*.svg'],
+    dest: '../dist/'
   },
   fonts: {
-    src: ['src/fonts.list'],
-    dest: 'dist/fonts/'
+    src: ['../src/fonts.list'],
+    dest: '../dist/fonts/'
   },
   assets: {
-    src: ['src/assets/**'],
-    dest: 'dist/assets/'
+    src: ['../src/assets/**'],
+    dest: '../dist/assets/'
   },
   favicons: {
-    src: ['src/assets/favicon.svg'],
-    dest: 'dist/favicons/',
+    src: ['../src/assets/favicon.svg'],
+    dest: '../dist/favicons/',
 
     config: {
       path: "favicons/",
@@ -70,9 +70,7 @@ const config = {
         android: true,              // Create Android homescreen icon. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }`
         appleIcon: true,            // Create Apple touch icons. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }`
         appleStartup: false,        // Create Apple startup images. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }`
-        coast: false,               // Create Opera Coast icon. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }`
         favicons: true,             // Create regular favicons. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }`
-        firefox: true,              // Create Firefox OS icons. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }`
         windows: true,              // Create Windows 8 tile icons. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }`
         yandex: false               // Create Yandex browser icon. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }`
       },

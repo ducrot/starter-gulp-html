@@ -5,11 +5,13 @@
 import gulp from 'gulp'
 import plumber from 'gulp-plumber'
 import imagemin from 'gulp-imagemin'
+import imageminGifsicle from 'imagemin-gifsicle'
 import imageminMozjpeg from 'imagemin-mozjpeg'
 import imageminPngquant from 'imagemin-pngquant'
+import imageminSvgo from 'imagemin-svgo';
 
-import config from './config'
-import {onError} from './misc'
+import config from './config.js'
+import {onError} from './misc.js'
 
 
 function assets() {
@@ -17,14 +19,12 @@ function assets() {
     .pipe(plumber({errorHandler: onError}))
     .pipe(imagemin([
       // Lossless:
-      imagemin.gifsicle({interlaced: true}),
-      imagemin.mozjpeg({progressive: true}),
-      imagemin.optipng({optimizationLevel: 5}),
-      imagemin.svgo({
+      imageminGifsicle({interlaced: true}),
+      imageminSvgo({
         plugins: [
-          {removeViewBox: false},
-          {removeDimensions: true}
-        ]
+          {name: 'removeViewBox', active: false},
+          {name: 'removeDimensions', active: true},
+        ],
       }),
       // Lossy compression
       imageminMozjpeg({

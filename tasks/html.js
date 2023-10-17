@@ -4,8 +4,8 @@
 
 import gulp from 'gulp'
 import plumber from 'gulp-plumber'
-import config from './config'
-import {onError} from './misc'
+import config from './config.js'
+import {onError} from './misc.js'
 
 
 function html() {

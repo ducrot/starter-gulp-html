@@ -12,9 +12,9 @@ import postcss from 'gulp-postcss'
 import autoprefixer from 'autoprefixer'
 import cssnano from 'cssnano'
 
-import config from './config'
-import {onError} from './misc'
-import {stream} from './server'
+import config from './config.js'
+import {onError} from './misc.js'
+import {stream} from './server.js'
 
 
 function styles() {
